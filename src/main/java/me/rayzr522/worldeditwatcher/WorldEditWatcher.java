@@ -1,6 +1,7 @@
 package me.rayzr522.worldeditwatcher;
 
 import me.rayzr522.worldeditwatcher.command.CommandWorldEditWatcher;
+import me.rayzr522.worldeditwatcher.listeners.CommandListener;
 import me.rayzr522.worldeditwatcher.utils.MessageHandler;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -31,6 +32,8 @@ public class WorldEditWatcher extends JavaPlugin {
         // Load configs
         reload();
 
+        getServer().getPluginManager().registerEvents(new CommandListener(this), this);
+
         // Set up commands
         getCommand("worldeditwatcher").setExecutor(new CommandWorldEditWatcher(this));
     }
@@ -44,8 +47,8 @@ public class WorldEditWatcher extends JavaPlugin {
      * (Re)loads all configs from the disk
      */
     public void reload() {
-        saveDefaultConfig();
-        reloadConfig();
+//        saveDefaultConfig();
+//        reloadConfig();
 
         messages.load(getConfig("messages.yml"));
     }

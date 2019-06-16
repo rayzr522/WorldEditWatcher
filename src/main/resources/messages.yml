@@ -22,3 +22,7 @@ command:
                 &7/worldeditwatcher &chelp|? &8-&6 Shows this help message.
         version: "You are running &c%s&6 version &c%s&6."
         reloaded: "Reloaded the config successfully!"
+
+alert:
+    prefix: "&c&lADMIN &7\u279c"
+    message: "%s&6 is using WorldEdit: &f%s"
