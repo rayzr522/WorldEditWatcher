@@ -1,0 +1,12 @@
+main: me.rayzr522.worldeditwatcher.WorldEditWatcher
+
+name: ${project.name}
+description: ${project.description}
+version: ${project.version}
+author: Rayzr
+
+commands:
+  worldeditwatcher:
+    description: The main command for WorldEditWatcher.
+    # aliases: []
+    usage: "\u00A7cRayzr hecc'd something up."
