@@ -16,7 +16,3 @@ The two permissions needed are:
 - `WorldEditWatcher.bypass` - Lets you bypass WorldEdit notifications so that not even admins get notified when you use WorldEdit commands.
 
 Additionally, to use the `/worldeditwatcher` command, you will need `WorldEditWatcher.use`.
-
-## Join Me
-
-[![Discord Badge](https://github.com/Rayzr522/ProjectResources/raw/master/RayzrDev/badge-small.png)](https://rayzr.dev/join)
